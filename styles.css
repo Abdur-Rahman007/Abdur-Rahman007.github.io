@@ -401,6 +401,31 @@ strong {
   animation: zoom var(--transition-time) ease-out;
 }
 
+.project-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project-title h3 {
+    margin: 0;
+}
+
+.project-title a {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: transform var(--transition-time) ease,
+                color var(--transition-time) ease;
+}
+
+.project-title a:hover {
+    transform: scale(1.1);
+    color: var(--accent-color);
+}
+
+
 @keyframes zoom {
   from {
     transform: scale(0.8);
